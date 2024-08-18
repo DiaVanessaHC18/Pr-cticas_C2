@@ -1,4 +1,54 @@
 package org.example;
+import java.util.Date;
+
+public class Persona {
+    protected String nombre;
+    protected String estado_asis;
+   char genero;
+   Date fechaReg;
+
+    public char getGenero() {
+        return genero;
+    }
+
+    public void setGenero(char genero) {
+        this.genero = genero;
+    }
+
+    public Date getFechaReg() {
+        return fechaReg;
+    }
+
+    public void setFechaReg(Date fechaReg) {
+        this.fechaReg = fechaReg;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getEstado_asis() {
+        return estado_asis;
+    }
+
+    public void setEstado_asis(String estado_asis) {
+        this.estado_asis = estado_asis;
+    }
+    
+    public Persona(String nombre, String estado_asis, char genero) {
+        this.nombre = nombre;
+        this.estado_asis = estado_asis;
+        this.genero = genero;
+
+    }
+}
+
+
+package org.example;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
