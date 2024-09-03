@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.prueba.Controller1.Calculatorcontroller">
+    <children>
+        <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="33.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Actions">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#borrarFila" text="Borrar fila historial" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <TextField fx:id="lblPantalla" layoutX="15.0" layoutY="43.0" prefHeight="5.0" prefWidth="156.0" promptText="0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="43.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </TextField>
+        <Button fx:id="botonPulsado1" onAction="#botonPulsado" text="_7" />
+        <Button fx:id="botonPulsado2" onAction="#botonPulsado" text="_8" GridPane.columnIndex="1" />
+        <Button fx:id="botonPulsado3" mnemonicParsing="false" onAction="#botonPulsado" text="9" GridPane.columnIndex="2" />
+        <Button fx:id="botonPulsado4" mnemonicParsing="false" onAction="#botonPulsado" text="4" GridPane.rowIndex="1" />
+        <Button fx:id="botonPulsado5" mnemonicParsing="false" onAction="#botonPulsado" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Button fx:id="botonPulsado6" mnemonicParsing="false" onAction="#botonPulsado" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+        <Button fx:id="botonPulsado7" mnemonicParsing="false" onAction="#botonPulsado" text="1" GridPane.rowIndex="2" />
+        <Button fx:id="botonPulsado8" mnemonicParsing="false" onAction="#botonPulsado" text="2" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <Button fx:id="botonPulsado9" mnemonicParsing="false" onAction="#botonPulsado" text="3" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+        <Button fx:id="botonPulsado10" mnemonicParsing="false" onAction="#botonPulsado" text="0" GridPane.rowIndex="3" />
+        <Button fx:id="botonPulsado11" minWidth="23.0" mnemonicParsing="false" onAction="#botonPulsado" prefHeight="25.0" prefWidth="40.0" text="+" GridPane.columnIndex="3" />
+        <Button fx:id="botonPulsado12" minWidth="40.0" mnemonicParsing="false" onAction="#botonPulsado" text="-" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+        <Button fx:id="botonPulsado13" minWidth="40.0" mnemonicParsing="false" onAction="#botonPulsado" text="x" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+        <Button fx:id="botonPulsado14" minWidth="40.0" mnemonicParsing="false" onAction="#botonPulsado" text="/" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+        <Button fx:id="btnCalcular" mnemonicParsing="false" onAction="" text="=" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <Button fx:id="btnClear" mnemonicParsing="false" onAction="#limpiar" text="C" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <ToolBar prefHeight="40.0" prefWidth="200.0" />
+    </children>
+</VBox>
